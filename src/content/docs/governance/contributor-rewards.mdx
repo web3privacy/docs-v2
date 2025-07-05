@@ -1,3 +1,80 @@
 ---
 title: Contributor Rewards
+description: How we retroactively thank active members for their valuable contributions to the ecosystem.
 ---
+
+To sustain our community, we believe it is essential to support our most active contributors. The Contributor Rewards system is our formal process for retroactively rewarding **[W3PN Members](/path/to/membership-page)** for the valuable work they have already completed.
+
+This system is not for funding future projects. Its sole purpose is to be a tangible "thank you" that recognizes and rewards the valuable contributions of individuals, trusting them to continue creating impact.
+
+---
+
+## How It Works: A Quick Overview
+
+The system operates in regular cycles, which we call "Funding Epochs" (e.g., once per quarter). The process has four simple steps.
+
+1.  **The Funding Pool:** A specific amount of funds from the W3PN treasury is allocated to the rewards pool for the Epoch.
+2.  **The Allocation Phase:** Every W3PN Member receives 100 non-financial "Allocation Points" to distribute among their peers (you cannot allocate points to yourself). A brief, public justification must be provided for each allocation.
+3.  **The Weighted Calculation:** This is the crucial step. A member's "influence" in the allocation process is directly tied to the value of their own contributions during the Epoch. Allocations from members who were themselves highly recognized by the community carry more weight.
+4.  **Distribution:** The funding pool is distributed to Members in proportion to their final, reputation-weighted scores.
+
+---
+
+## The Calculation Explained
+
+The system uses a two-pass calculation to amplify the signal from active, recognized contributors.
+
+| Step | Action | Purpose |
+| :--- | :--- | :--- |
+| **A: Raw Score** | First, we sum the raw Allocation Points each member receives. | To get an initial measurement of who the community values. |
+| **B: Allocator Weight** | We determine the "weight" of each allocator based on their own Raw Score. | To give more influence to the opinions of those who were themselves highly valued. |
+| **C: Final Score** | We recalculate the scores, multiplying the points received by the allocator's weight. | To get a final, reputation-weighted score for each member. |
+
+---
+
+## A Practical Example
+
+Let’s imagine a simplified W3PN with four members and a **$10,000** funding pool.
+
+*   **Alice** (core contributor) gives: 100 points to Bob.
+*   **Bob** (regular contributor) gives: 70 to Alice, 30 to Carol.
+*   **Carol** (occasional contributor) gives: 80 to Alice, 20 to Bob.
+*   **David** (inactive member) gives: 100 to Alice.
+
+#### Phase 1: Raw Scores
+
+| Recipient | Points From Alice | Points From Bob | Points From Carol | Points From David | **Raw Score** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Alice | (self) | 70 | 80 | 100 | **250** |
+| Bob | 100 | (self) | 20 | 0 | **120** |
+| Carol | 0 | 30 | (self) | 0 | **30** |
+| David | 0 | 0 | 0 | (self) | **0** |
+
+#### Phase 2: Weighted Calculation
+
+We use the Raw Scores as weights for each allocation.
+
+*   Alice's Final Score: `(70 * 120)` (from Bob) `+ (80 * 30)` (from Carol) `+ (100 * 0)` (from David) = **10,800**
+*   Bob's Final Score: `(100 * 250)` (from Alice) `+ (20 * 30)` (from Carol) = **25,600**
+*   Carol's Final Score: `(30 * 120)` (from Bob) = **3,600**
+*   David's Final Score: **0**
+
+#### Phase 3: Final Payout
+
+| Member | Final Score | % of Total | Payout |
+| :--- | :--- | :--- | :--- |
+| Alice | 10,800 | 27% | $2,700 |
+| Bob | 25,600 | 64% | $6,400 |
+| Carol | 3,600 | 9% | $900 |
+| David | 0 | 0% | $0 |
+
+> **Why did David’s allocation have no impact?**
+> This is a core feature of the system. Because David was inactive and received 0 points himself, his "Allocator's Raw Score" was 0. The calculation `(100 * 0)` correctly gave his allocation zero weight. This demonstrates how the system automatically and transparently amplifies the signal from active, recognized contributors.
+
+---
+
+## Why This Weighted Model is Essential
+
+*   **It Amplifies Signal, Reduces Noise:** It gives more weight to the opinions of members who are "in the trenches" and have the most context on who is creating value.
+*   **Influence is Earned, Not Held:** A member's influence in the system is not static. It must be re-earned each Epoch through recognized work.
+*   **It Creates a Virtuous Cycle:** Being recognized as a valuable contributor gives you a stronger voice in recognizing others, which reinforces and rewards expertise.
