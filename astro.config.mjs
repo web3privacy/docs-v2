@@ -24,13 +24,33 @@ export default defineConfig({
 				'./src/styles/custom.css'
 			],
 			sidebar: [
+				{ label: 'Introduction', slug: 'index' },
 				{
-					label: 'Introduction',
+					label: 'Our Foundation',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Welcome', slug: 'index' },
+						{ label: '⁠Mission & Vision', slug: 'index' },
+						{ label: 'How We Work', slug: 'index' },
+						{ label: 'The Constitution', slug: 'constitution' },
+						{ label: 'Communication Channels', slug: 'communication-channels' },
 					],
 				},
+				{
+					label: 'Governance',
+					items: [
+						{ label: 'Making a Formal Proposal', slug: 'index' },
+						{ label: 'The Path to Membership', slug: 'index' },
+						{ label: 'Contributor Rewards', slug: 'index' },
+						{ label: 'Stewards & Conflict Resolution', slug: 'index' },
+					]
+				},
+				{
+					label: 'Contributor Guides',
+					items: [
+						{ label: 'Quickstart for Newcomers', slug: 'index' },
+						{ label: 'Role-Based Guides', slug: 'index' },
+					]
+				}
 			],
 		}),
 	],
