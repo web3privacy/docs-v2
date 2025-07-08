@@ -50,11 +50,19 @@ export default defineConfig({
 				{
 					label: 'Ecosystem',
 					items: [
+						{ slug: 'ecosystem/the-assembly' },
 						{ slug: 'ecosystem/working-groups' },
 						{ slug: 'ecosystem/recognized-projects' },
 						{ slug: 'ecosystem/shared-infra-services' },
 					]
 				},
+				/*{
+					label: 'Working Groups',
+					items: [
+						{ slug: 'ecosystem/working-groups/infra' },
+						{ slug: 'ecosystem/working-groups/comms' },
+					]
+				}*/
 				/*{
 					label: 'Contributor Guides',
 					items: [
