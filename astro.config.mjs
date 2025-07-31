@@ -27,7 +27,7 @@ export default defineConfig({
 				'./src/styles/custom.css'
 			],
 			sidebar: [
-				{ label: 'Introduction', slug: 'index' },
+				{ slug: 'index' },
 				{
 					label: 'Our Foundation',
 					items: [
@@ -50,12 +50,19 @@ export default defineConfig({
 				{
 					label: 'Ecosystem',
 					items: [
+						{ slug: 'ecosystem/guilds' },
 						{ slug: 'ecosystem/the-assembly' },
-						{ slug: 'ecosystem/working-groups' },
 						{ slug: 'ecosystem/recognized-projects' },
-						{ slug: 'ecosystem/shared-infra-services' },
 					]
 				},
+				{
+					label: 'Links',
+					items: [
+						{ label: 'The Commons ↗', link: 'https://commons.w3pn.org' },
+						{ label: 'GitHub Org ↗', link: 'https://github.com/web3privacy' },
+					]
+				}
+				
 				/*{
 					label: 'Working Groups',
 					items: [
